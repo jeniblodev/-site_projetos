@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: url('/img/nebulosa.jpg');
+    background-image: url('../img/nebulosa.jpg');
     background-repeat: no-repeat;
     backdrop-filter: invert(14%);
     height: 100vh;
