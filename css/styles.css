@@ -1,0 +1,157 @@
+/* resetando as configurações padrão do css*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('/img/nebulosa.jpg');
+    background-repeat: no-repeat;
+    backdrop-filter: invert(14%);
+    height: 100vh;
+    font-size: 12px;
+}
+
+@media (min-width: 400px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+header {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.menu {
+    background-color: rgba(2, 2, 68, 0.5);
+    position: fixed;
+    width: 100vw;
+    top: 0px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-family: 'Major Mono Display', monospace;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.menu li {
+    list-style: none;
+    
+}
+
+a {
+    color: #B0C4DE;
+    text-decoration: none;
+    
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.homepageGrid {
+    display: grid;
+    gap: 50px;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    
+       
+}
+
+.homepageGrid .site-title {
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+}
+
+.homepageGrid .site-subtitle, .descricao {
+    font-family: 'Cutive Mono', monospace;
+}
+
+.homepageGrid .site-subtitle {
+    text-align: center;
+}
+
+.homepageGrid .descricao {
+    padding-top: 2em;
+    text-align: center;
+    
+}
+
+.homepageGrid .textHome {
+    color: #B0C4DE;
+    
+    
+}
+
+.homepageGrid .imgHome {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0em 0em 0.5em 0.8em rgba(3, 3, 97, 0.5);
+    align-content: center;
+    justify-content: center;
+    
+     
+    
+}
+
+
+
+@media (min-width: 970px) {
+    .homepageGrid {
+        grid-template-columns: 450px 450px;
+        align-content: center;
+        gap: 2em;
+        
+
+    }
+
+    .homepageGrid .imgHome {
+        height: 441px;
+        width: 441px;
+        
+    }
+
+    .homepageGrid .textHome {
+        padding-top: 180px;
+        
+        
+    }
+    
+    .homepageGrid .descricao {
+        color: #B0C4DE;
+        padding-top: 50px;
+    }
+}
+
+@media (min-width: 1070px) {
+    .homepageGrid {
+        gap: 7em;
+        
+
+    }
+
+    .homepageGrid .imgHome {
+        margin-top: 3em;
+        
+    }
+}

@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E6E6FA;
+}
+
+.menu-pq {
+    background-color: rgba(18, 18, 97, 0.877);
+    position: fixed;
+    width: 100vw;
+    top: 0px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-family: 'Major Mono Display', monospace;
+    
+
+}
+
+.menu-pq ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.menu-pq li{
+    list-style: none;
+    
+}
+
+.menu-pq a {
+    color: #B0C4DE;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 20px;
+
+    
+}
+
+.menu-pq a:hover {
+    text-shadow:  0.1em 0.1em rgba(228, 228, 241, 0.8);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1.5fr 5fr;
+    grid-template-rows: 100%;
+    height: 100vh;
+    grid-template-areas: 'header main';
+       
+    
+}
+
+header {
+    background-image: url('/img/nebulosa.jpg');
+    background-repeat: no-repeat;
+    backdrop-filter: invert(14%);
+    height: 100vh;
+    position: fixed;
+    grid-area: header;
+    
+}
+
+.container .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin:auto;
+  font-family: 'Major Mono Display', monospace;
+  
+}
+
+.container .menu img {
+    height: 160px;
+    margin-bottom: 60px;
+    
+
+}
+
+.menu li {
+    list-style: none;
+    text-align: center;
+    padding: 20px;
+       
+}
+
+.menu a {
+    color: #B0C4DE;
+    text-decoration: none;
+    border: 1px solid #B0C4DE;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+.menu a:hover {
+    box-shadow: 0em 0em 0.2em 0.4em rgba(3, 3, 97, 0.5);
+}
+
+h3 {
+    color: #B0C4DE;
+    margin-top: -25px;
+    font-family: 'Cutive Mono', monospace;
+    font-size: 10px;
+    text-align: center;
+
+}
+
+@media (max-width: 538px) {
+    header {
+        display: none;
+    }
+    
+    h1 {
+        margin-left: -140px;
+        padding-top: 60px;
+    }
+    
+    p {
+        margin-left: -140px;
+        
+        
+    }
+
+        
+}
+
+@media (min-width: 538px) {
+    .menu-pq {
+        display: none;
+    }
+}
+
+
+main {
+    font-family: 'Cutive Mono', monospace;
+    margin-right: 5em;
+    grid-area: main;
+    
+        
+}
+
+main h1 {
+    font-family: 'Source Code Pro', monospace;
+    color: rgb(2, 2, 92);
+    text-shadow:  0.05em 0.05em rgba(3, 3, 97, 0.5);
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+main p {
+    text-align: justify;
+    font-size: 1.3em;
+    color: rgb(0, 0, 26);
+    line-height: 1.2em;
+    
+}
+
+@media (max-width: 900px) {
+    main {
+        margin-left: 3em;
+        font-size: 0.9em;
+    }
+
+}
+
+@media (max-width: 643px) {
+    main {
+        margin-left: 6em;
+        margin-right: 3em;
+        
+    }
+
+}
+
+
