@@ -23,7 +23,6 @@ body {
 
 .menu-pq ul {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
     
 }
@@ -42,13 +41,14 @@ body {
     
 }
 
+.menu-pq a:active,
 .menu-pq a:hover {
     text-shadow:  0.1em 0.1em rgba(228, 228, 241, 0.8);
 }
 
 .container {
     display: grid;
-    grid-template-columns: 1.5fr 5fr;
+    grid-template-columns: 260px 5fr;
     grid-template-rows: 100%;
     height: 100vh;
     grid-template-areas: 'header main';
@@ -61,6 +61,7 @@ header {
     background-repeat: no-repeat;
     backdrop-filter: invert(14%);
     height: 100vh;
+    width: 260px;
     position: fixed;
     grid-area: header;
     
@@ -87,6 +88,7 @@ header {
     list-style: none;
     text-align: center;
     padding: 20px;
+    
        
 }
 
@@ -96,6 +98,7 @@ header {
     border: 1px solid #B0C4DE;
     padding: 10px;
     border-radius: 20px;
+    transition: box-shadow .5s;
 }
 
 
@@ -105,7 +108,7 @@ header {
 
 h3 {
     color: #B0C4DE;
-    margin-top: -25px;
+    margin-top: -15px;
     font-family: 'Cutive Mono', monospace;
     font-size: 10px;
     text-align: center;
@@ -118,18 +121,18 @@ h3 {
     }
     
     h1 {
-        margin-left: -140px;
+        margin-left: -310px;
         padding-top: 60px;
     }
     
     p {
-        margin-left: -140px;
+        margin-left: -310px;
         font-family: 'Source Code Pro', monospace;
         
     }
 
     .contatos {
-        margin-left: -120px;
+        margin-left: -310px;
     }
 
         
@@ -145,6 +148,7 @@ h3 {
 main {
     font-family: 'Cutive Mono', monospace;
     margin-right: 5em;
+    margin-left: 3em;
     grid-area: main;
     
         
@@ -185,9 +189,7 @@ main p {
 
 .contatos {
     display: grid;
-    gap: 50px;
-    align-content: center;
-    justify-content: center;
+    gap: 20px;
     text-align: center;
     margin-top: 70px;
     margin-bottom: 70px;
@@ -196,8 +198,11 @@ main p {
 
 .contatos img {
     border-radius: 50%;
+    transition: box-shadow .5s;
+    height: 80px;
 }
 
+.contatos a:active img,
 .contatos a:hover img {
     box-shadow: 0em 0em 0.2em 0.4em rgba(3, 3, 97, 0.5);
 }
@@ -211,5 +216,11 @@ main p {
     }
 }
 
+@media (max-width: 362px) {
+   p {
+       margin-right: 3em;
+   }
+
+}
 
 

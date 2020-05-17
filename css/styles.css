@@ -61,8 +61,10 @@ a {
     
 }
 
+a:active,
 a:hover {
     text-decoration: underline;
+    text-shadow: 0px 0px 20px #B0C4DE;
 }
 
 .homepageGrid {
@@ -79,6 +81,7 @@ a:hover {
 .homepageGrid .site-title {
     font-family: 'Source Code Pro', monospace;
     text-align: center;
+    
 }
 
 .homepageGrid .site-subtitle, .descricao {
@@ -93,7 +96,9 @@ a:hover {
     padding-top: 2em;
     text-align: center;
     
+    
 }
+
 
 .homepageGrid .textHome {
     color: #B0C4DE;

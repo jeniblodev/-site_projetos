@@ -22,7 +22,6 @@ body {
 
 .menu-pq ul {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
     
 }
@@ -41,13 +40,14 @@ body {
     
 }
 
+.menu-pq a:active,
 .menu-pq a:hover {
     text-shadow:  0.1em 0.1em rgba(228, 228, 241, 0.8);
 }
 
 .container {
     display: grid;
-    grid-template-columns: 1.5fr 5fr;
+    grid-template-columns: 260px 5fr;
     grid-template-rows: 100%;
     height: 100vh;
     grid-template-areas: 'header main';
@@ -60,6 +60,7 @@ header {
     background-repeat: no-repeat;
     backdrop-filter: invert(14%);
     height: 100vh;
+    width: 260px;
     position: fixed;
     grid-area: header;
     
@@ -95,6 +96,7 @@ header {
     border: 1px solid #B0C4DE;
     padding: 10px;
     border-radius: 20px;
+    transition: box-shadow .5s;
 }
 
 
@@ -104,43 +106,48 @@ header {
 
 h3 {
     color: #B0C4DE;
-    margin-top: -25px;
+    margin-top: -15px;
     font-family: 'Cutive Mono', monospace;
     font-size: 10px;
     text-align: center;
 
 }
 
-@media (max-width: 538px) {
+@media (max-width: 652px) {
     header {
         display: none;
     }
     
     h1 {
-        margin-left: -140px;
+        margin-left: -310px;
         padding-top: 60px;
     }
     
     p {
-        margin-left: -140px;
-        
-        
+        margin-left: -310px;
     }
 
-        
+    .gatos {
+        margin-left: -320px;
+    }
 }
 
-@media (min-width: 538px) {
+@media (min-width: 652px) {
     .menu-pq {
         display: none;
     }
+
+    
 }
 
 
 main {
     font-family: 'Cutive Mono', monospace;
     margin-right: 5em;
+    margin-left: 3em;
     grid-area: main;
+    
+    
     
         
 }
@@ -151,6 +158,8 @@ main h1 {
     text-shadow:  0.05em 0.05em rgba(3, 3, 97, 0.5);
     margin-top: 30px;
     margin-bottom: 40px;
+    
+    
 }
 
 main p {
@@ -158,6 +167,8 @@ main p {
     font-size: 1.3em;
     color: rgb(0, 0, 26);
     line-height: 1.2em;
+    text-indent: 1.4em;
+    max-width: 100vw;
     
 }
 
@@ -178,4 +189,138 @@ main p {
 
 }
 
+.inicio {
+    margin-top: 8em;
+    max-width: 550px;
+    
+    
+}
 
+.inicio p {
+    text-indent: 0;
+   
+}
+
+.foto {
+    width: 300px;
+    border-radius: 50%;
+    float: right;
+    margin: 2em;
+    margin-top: -13em;
+    
+}
+
+.gatos {
+    display: grid;
+    gap: 30px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+    color: rgb(0, 0, 26);
+
+    
+}
+
+@media (min-width: 783px) {
+    .gatos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+.gatos img {
+    width: 300px;
+    border-radius: 20%;
+    box-shadow:  .5em .5em .5em rgba(3, 3, 97, .5);
+}
+
+.gatos figcaption {
+    color: rgb(0, 0, 26);
+    font-size: 17px;
+}
+
+@media (max-width: 1200px) {
+    .inicio {
+        margin-top: 2em;
+        
+    }
+
+    .foto {
+        margin: 2em;
+        margin-top: 8em;
+        
+    }
+
+    .conteudo {
+        margin-top: -2em;
+    }
+}
+
+@media (max-width: 1057px) {
+   .gatos img {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media (max-width: 783px) {
+    .foto {
+        width: 150px;
+    
+    }
+
+}
+
+@media (max-width: 583px) {
+    .conteudo {
+        margin-right: 4em;
+    }
+
+}
+
+@media (max-width: 556px) {
+    .conteudo {
+        margin-right: 2em;
+        margin-left: 1em;
+        margin-top: -7em;
+    }
+
+    .foto {
+        float: none;
+        margin-left: -200px;
+        margin-top: 1em;
+    }
+
+}
+
+@media (max-width: 392px) {
+    .inicio {
+        font-size: 10px;
+        max-width: 50px;
+    }
+   
+    .conteudo {
+        font-size: 12px;
+        margin-left: -0.5em;
+        margin-right: .4em;
+    }
+
+}
+
+@media (max-width: 360px) {
+    .inicio {
+        font-size: 10px;
+        width: 50px;
+    }
+   
+    .conteudo {
+        font-size: 12px;
+        margin-left: -0.5em;
+        margin-right: 5em;
+    }
+
+    .foto {
+        margin-left: -250px;
+    }
+
+}
