@@ -180,7 +180,7 @@ main p {
 
 @media (max-width: 643px) {
     main {
-        margin-left: 6em;
+        margin-left: 5em;
         margin-right: 3em;
         
     }
@@ -218,7 +218,7 @@ main p {
 
 @media (max-width: 362px) {
    p {
-       margin-right: 3em;
+       margin-right: 1em;
    }
 
 }
