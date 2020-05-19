@@ -201,6 +201,15 @@ main p {
    
 }
 
+.curriculo a {
+    text-decoration: none;
+}
+
+.curriculo a:hover {
+    text-decoration: underline;
+}
+
+
 .foto {
     width: 300px;
     border-radius: 50%;
@@ -229,7 +238,7 @@ main p {
 }
 
 .gatos img {
-    width: 300px;
+    width: 200px;
     border-radius: 20%;
     box-shadow:  .5em .5em .5em rgba(3, 3, 97, .5);
 }
@@ -258,8 +267,8 @@ main p {
 
 @media (max-width: 1057px) {
    .gatos img {
-        height: 200px;
-        width: 200px;
+        height: 150px;
+        width: 150px;
     }
 }
 

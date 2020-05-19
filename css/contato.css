@@ -210,7 +210,7 @@ main p {
 
 @media (min-width: 837px) {
     .contatos {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         margin-top: 140px;
         
     }
