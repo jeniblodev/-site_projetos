@@ -17,12 +17,14 @@ body {
     padding-top: 20px;
     font-family: 'Major Mono Display', monospace;
     
+    
 
 }
 
 .menu-pq ul {
     display: flex;
     justify-content: space-evenly;
+    
     
 }
 
@@ -36,7 +38,7 @@ body {
     text-decoration: none;
     font-size: 12px;
     padding: 20px;
-
+    
     
 }
 
@@ -51,7 +53,7 @@ body {
     grid-template-rows: 100%;
     height: 100vh;
     grid-template-areas: 'header main';
-       
+    
     
 }
 
@@ -182,8 +184,12 @@ main p {
 
 @media (max-width: 643px) {
     main {
-        margin-left: 6em;
-        margin-right: 3em;
+        margin-left: 5.5em; 
+        width: 0px;
+        margin-right: 5.5em;
+        
+        
+        
         
     }
 
